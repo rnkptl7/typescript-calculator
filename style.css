@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+
+:root {
+  --bg-body-color: #fff;
+  --bg-color: #f2f2f2;
+  --bg-primary: #92c2e8;
+  --text-color: black;
+  --btn-bg: #f7f7f7;
+  --btn-number: #fdfdfd;
+  --btn-bg-none: none;
+}
+
+.dark-theme {
+  --bg-body-color: #000106;
+  --bg-color: rgba(13, 13, 12, 0.852);
+  --bg-primary: #92c2e8;
+  --text-color: #fff;
+  --btn-bg: #fcfcfc38;
+  --btn-number: #fcfcfc38;
+  --btn-bg-none: #333333c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg-body-color);
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.flex {
+  display: flex;
+}
+
+.bg-none {
+  background: var(--btn-bg-none) !important;
+}
+.operator {
+  font-size: 25px !important;
+  font-weight: 300 !important;
+}
+
+.center_align {
+  display: flex;
+  align-items: center;
+}
+
+::placeholder {
+  font-size: 40px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.calculator {
+  background-color: var(--bg-color);
+  width: 450px;
+  /* height: 500px; */
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: rgb(64 64 64 / 96%) 0px 3px 10px -1px;
+}
+
+.calculator .darkTheme_btn img {
+  width: 25px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.calculator .calculator_input {
+  padding: 10px 0;
+}
+
+.calculator_input input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 40px;
+  text-align: right;
+  font-weight: 500;
+  background: var(--btn-bg-none);
+  color: var(--text-color);
+}
+
+.calculator_key .row {
+  display: flex;
+}
+
+.calculator_key .row button {
+  padding: 10px;
+  min-width: 79px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 2px;
+  cursor: pointer;
+  background: var(--btn-bg);
+  color: var(--text-color);
+}
+
+.calculator_key .row button:active {
+  background: var(--bg-primary) !important;
+}
+
+.equal-btn {
+  background-color: var(--bg-primary) !important;
+}
+
+.calculator_key .row button img {
+  margin: 4px;
+  width: 20px;
+}
+
+.number {
+  background: var(--btn-number) !important;
+  font-weight: 500;
+  font-size: 20px !important;
+}
+
+.trignofun button {
+  position: relative;
+}
+
+.trignofun button ul {
+  display: none;
+  position: absolute;
+  left: 20%;
+  top: 70%;
+  list-style: none;
+  background-color: var(--bg-color);
+  width: 100px;
+  padding: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.trignofun button:hover ul {
+  display: block;
+}
+
+.trignofun button ul li {
+  padding: 5px;
+}
+
+.trignofun button ul li:hover {
+  background-color: var(--bg-primary);
+}
+
+.arrow_down {
+  transition: transform 0.3s;
+}
+
+.trignofun button:hover .arrow_down {
+  transform: rotate(180deg);
+}

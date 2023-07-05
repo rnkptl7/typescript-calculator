@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="assets/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/index.js" defer></script>
+</head>
+
+<body>
+    <section class="main">
+        <div class="calculator">
+            <div class="darkTheme_btn">
+                <img src="assets/moon.png" id="darkIcon" alt="">
+            </div>
+            <div class="calculator_input">
+                <input class="input" type="text" placeholder="0" autofocus>
+            </div>
+            <div class="calculator_key">
+                <div class="row">
+                    <button class="bold bg-none" id="degToRad">DEG</button>
+                    <button class="bold bg-none">F-E</button>
+                </div>
+                <div class="row">
+                    <button class="bold opacity bg-none">MC</button>
+                    <button class="bold opacity bg-none">MR</button>
+                    <button class="bold bg-none">M+</button>
+                    <button class="bold bg-none">M-</button>
+                    <button class="bold bg-none">MS</button>
+                </div>
+                <div class="row flex trignofun">
+                    <button class="center_align bg-none">
+                        <img src="assets/triangle.png" alt="trigonometry">
+                        Trigonometry
+                        <img src="assets/down-arrow.png" alt="down arrow" class="arrow_down">
+                        <ul id="trigonometry-one">
+                            <li>Sin</li>
+                            <li>Cos</li>
+                            <li>Tan</li>
+                        </ul>
+                        <ul id="trigonometry-two">
+                            <li>asin</li>
+                            <li>acos</li>
+                            <li>atan</li>
+                        </ul>
+                    </button>
+                    <button class="center_align bg-none">
+                        <img src="assets/frequency.png" alt="function">Function
+                        <img src="assets/down-arrow.png" alt="down arrow" class="arrow_down">
+                        <ul>
+                            <li>Round</li>
+                            <li>Ceil</li>
+                            <li>Floor</li>
+                        </ul>
+                    </button>
+                </div>
+                <div class="row">
+                    <button id="2nd">2<sup>nd</sup> </button>
+                    <button class="bold">&pi;</button>
+                    <button>e</button>
+                    <button>C</button>
+                    <button><img src="assets/backspace.png" alt=""></button>
+                </div>
+                <div class="row">
+                    <button class="">x<sup>2</sup> </button>
+                    <button class=""><sup>1</sup>/<sub>x</sub></button>
+                    <button class="">| x |</button>
+                    <button class="">exp</button>
+                    <button>mod</button>
+                </div>
+                <div class="row">
+                    <button>&radic;x</button>
+                    <button>(</button>
+                    <button>)</button>
+                    <button>n!</button>
+                    <button class="operator">÷</button>
+                </div>
+                <div class="row">
+                    <button>x<sup>y</sup></button>
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator">x</button>
+                </div>
+                <div class="row">
+                    <button>10<sup>x</sup></button>
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator">-</button>
+                </div>
+                <div class="row">
+                    <button>log</button>
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator">+</button>
+                </div>
+                <div class="row">
+                    <button>ln</button>
+                    <button class="operator">+/-</button>
+                    <button class="number">0</button>
+                    <button class="operator">.</button>
+                    <button class="operator equal-btn">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
