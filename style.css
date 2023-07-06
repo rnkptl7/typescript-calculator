@@ -71,9 +71,9 @@ body {
   background-color: var(--bg-color);
   width: 450px;
   /* height: 500px; */
-  border-radius: 15px;
+  border-radius: 3px;
   padding: 15px;
-  box-shadow: rgb(64 64 64 / 96%) 0px 3px 10px -1px;
+  box-shadow: rgb(64 64 64 / 90%) 3px 5px 7px -4px;
 }
 
 .calculator .darkTheme_btn img {
